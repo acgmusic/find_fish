@@ -1,0 +1,36 @@
+# *************************** 以下参数不要修改，除非你知道要干什么 ***************************
+music_station:
+  net_ease:
+    home_page:
+      https://music.163.com/
+    url:
+      https://music.163.com/#/search/m/?s=$keyword$
+    true_url:
+      http://music.163.com/song/media/outer/url?id=$song_id$
+    xpath:
+      # 这个目前只有网易云音乐有，他的搜索结果嵌入在一个iframe里面
+      search_result_frame:
+        //*[@id="g_iframe"]
+      search_result_num:
+        //*[@id="m-search"]/div[1]/em
+      search_result_list:
+        //*[@class="srchsongst"]/div
+      song:
+        title:
+          ./div[2]/div/div/a/b
+        singer:
+          ./div[4]/div/a/span
+        song_url:
+          ./div[2]/div/div/a
+        play_btn:
+          //*[@id="content-operation"]/a[1]
+        duration:
+          ./div[6]
+
+  qq:
+    url:
+      https://y.qq.com
+    xpath:
+      search:
+        0
+
