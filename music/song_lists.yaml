@@ -1,0 +1,30 @@
+- song_list:
+  - duration: 393
+    singer: Sound Horizon
+    song_id: '22782025'
+    song_url: https://music.163.com/song?id=22782025
+    title: "\u7F8E\u3057\u304D\u3082\u306E\u7F8E\u4E3D\u4E4B\u7269"
+    true_url: http://music.163.com/song/media/outer/url?id=22782025
+  - duration: 252
+    singer: "\u9ED2\u3046\u3055P"
+    song_id: '26096272'
+    song_url: https://music.163.com/song?id=26096272
+    title: "\u5343\u672C\u685C\u5343\u672C\u6A31"
+    true_url: http://music.163.com/song/media/outer/url?id=26096272
+  song_list_name: test
+- song_list:
+  - duration: 153
+    singer: "\u4E45\u77F3\u8B72"
+    song_id: '443242'
+    song_url: https://music.163.com/song?id=443242
+    title: "Summer\u7535\u5F71\u300A\u83CA\u6B21\u90CE\u7684\u590F\u5929\u300B\u4E3B\
+      \u9898\u66F2"
+    true_url: http://music.163.com/song/media/outer/url?id=443242
+  - duration: 139
+    singer: Foxtail-Grass Studio
+    song_id: '26537202'
+    song_url: https://music.163.com/song?id=26537202
+    title: "\u6CA2\u306E\u6CB3\u57CE\u5DE5\u52D9\u5E97\u539F\u66F2:\u82A5\u5DDD\u9F8D\
+      \u4E4B\u4ECB\u306E\u6CB3\u7AE5 \uFF5E Candid Friend"
+    true_url: http://music.163.com/song/media/outer/url?id=26537202
+  song_list_name: admin
