@@ -153,7 +153,7 @@ class MusicConsole:
 
     def checkValidIndex(self, index):
         if index >= len(self.song_lists):
-            print(f"please input valid index, range between 0 ~ {len(self.cur_search_result)-1}")
+            print(f"index={index}, but index should between 0 ~ {len(self.song_lists)-1}")
             return False
         return True
 
@@ -167,11 +167,21 @@ class MusicConsole:
             return True
         return False
 
+    def checkValidSearchResIndex(self, index):
+        if not self.cur_search_result:
+            print("please search first")
+            return -1
+        if index >= len(self.cur_search_result):
+            print(f"index={index}, but index should between 0 ~ {len(self.cur_search_result)-1}")
+            return -1
+        return index
+
     def playMusicByIndex(self, index):
         if not self.cur_search_result:
             print("currently no searching result, please search song first")
             return
-        if self.checkValidIndex(index):
+        index = self.checkValidSearchResIndex(index)
+        if index >= 0:
             true_song_url = self.cur_search_result[index]['true_url']
             self.playMusicByUrl(true_song_url)
 
